@@ -12,22 +12,18 @@ public class ProductInMemoryAdapter implements ProductPersistencePort {
 
     private static final Map<Integer, Product> productMap = new HashMap<Integer, Product>(0);
 
-    @Override
     public void addProduct(Product product) {
         productMap.put(product.getProductId(), product);
     }
 
-    @Override
     public void removeProduct(Product product) {
-        productMap.remove(product);
+        productMap.remove(product.getProductId());
     }
 
-    @Override
     public List<Product> getProducts() {
         return new ArrayList<Product>(productMap.values());
     }
 
-    @Override
     public Product getProductById(Integer productId) {
         return productMap.get(productId);
     }
