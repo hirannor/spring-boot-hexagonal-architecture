@@ -4,8 +4,3 @@
 >
 >> [Springboot with hexagonal and ddd](https://github.com/hirannor/springboot-hexagonal-ddd)
 
-
-
-A POC of a Spring-Boot application based on **hexagonal architecture**
-
-![alt hexagonal architecture / port and adapters](https://i.imgur.com/eseWVlB.png)
